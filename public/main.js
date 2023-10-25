@@ -43,8 +43,8 @@ dropdownThree?.addEventListener('click', () =>{
 })
 
        // signup
-if (window.location.pathname === "/signup/") {
-    logInButton.addEventListener('click', (e) =>{
+// if (window.location.pathname === "/signup/") {
+    logInButton?.addEventListener('click', (e) =>{
         if(e.target.classList.contains('m-active')){
         } else {
         e.target.classList.toggle('m-active');
@@ -55,7 +55,7 @@ if (window.location.pathname === "/signup/") {
         }    
     })
 
-    signUpButton.addEventListener('click', (e) =>{
+    signUpButton?.addEventListener('click', (e) =>{
         if(e.target.classList.contains('m-active')){
         } else {
         e.target.classList.toggle('m-active');
@@ -72,20 +72,21 @@ if (window.location.pathname === "/signup/") {
             enterPasswordLogIn.type = 'password'  
         }
     }
-    visOn.addEventListener('click', (e) =>{
+    visOn?.addEventListener('click', (e) =>{
         e.target.classList.add('hidden');
         visOff.classList.remove('hidden');
         changePasswordType()
     })
-    visOff.addEventListener('click', (e) =>{
+    visOff?.addEventListener('click', (e) =>{
         e.target.classList.toggle('hidden')
         visOn.classList.remove('hidden');
         changePasswordType()
     }) 
-}
+// }
 
-if (window.location.pathname === "/marketplace/") {
+if (imageSlider) {
     // const imagesCount = imageSlider.childElementCount;
+
     const pointerContainer = document.createElement('div');
     imageSliderContainer.append(pointerContainer)
     pointerContainer.classList.add('pointer-container')
