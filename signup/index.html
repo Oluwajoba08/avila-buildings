@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style1.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/avila-buildings-icon.png" type="image/x-icon">
+        <script src="../main.js" defer></script>
+        <title>Sign Up - Avila Buildings</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="../" class="clip-nav">Home</a>
+            <a href="../marketplace/" class="clip-nav">Marketplace</a>
+            <a href="./" class="clip-nav active">Sign up</a>
+            <a href="../contact/" class="clip-nav">Contact us</a>
+            <a href="../about/" class="clip-nav">About us</a>
+            <div class="before"></div>
+            <div class="after"></div>
+            <button class="navbar-button">
+                <span class="hamburger" id="cancel-btn"></span>
+            </button>
+        </div>
+
+       <main class="main-container">
+           <div class="form-container">
+                <nav class="header">
+                    <button id="sign-up-button" class="header-snap m-active">Sign-up</button>
+                    <button id="log-in-button" class="header-snap">Log-in</button>
+                </nav>
+               <div class="flex-wrapper">
+                   <form class="form sign-up">
+                        <label class="form-sub-container" for="email">
+                            Email
+                            <input type="email" name="email" id="email" placeholder="Enter a valid email">
+                        </label>
+                        <label class="form-sub-container" for="password">
+                            Password
+                            <input type="password" id="enter-password-signup" name="password" placeholder="Enter a strong password">
+                        </label>
+                        <label class="form-sub-container">
+                            Confirm Password
+                            <input type="password" id="confirm-password-sign-up" name="password" placeholder="Confirm your password">
+                        </label>
+                        <button type="submit">Submit</button>
+                        <p class="alternate-para">Already have an account? <a class="alternate-link" href="#">Login here</a></p>
+                    </form>
+                    <form class="form log-in">
+                        <label class="form-sub-container" for="mail">
+                            Email
+                            <input type="email" name="mail" id="mail" placeholder="Enter your email">
+                        </label>
+                        <label class="form-sub-container" for="enter-password-log-in">
+                            Password
+                            <input type="password" id="enter-password-log-in" name="enter-password-log-in" placeholder="Enter your password">
+                            <img class ="eye-icon vis-on" src="../images/visibility_FILL0_wght400_GRAD0_opsz48.svg" alt="v">
+                            <img class ="eye-icon vis-off hidden" src="../images/visibility_off_FILL0_wght400_GRAD0_opsz48.svg" alt="v-off">
+                        </label>
+                        <button type="submit">Submit</button>
+                        <p class="alternate-para">Don't have an account? <a class="alternate-link" href="#">Signup here</a></p>
+                    </form>
+               </div>
+           </div>
+       </main>
+    </body>
+</html>
